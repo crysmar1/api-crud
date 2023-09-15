@@ -8,7 +8,7 @@ const cadastrar = async (req, res) => {
         return res.status(201).json(cadastrarUsuario);
 
     } catch (error) {
-        return res.status(500).json(`Erro interno do servidor`);
+        return res.status(500).json({mensagem: `Erro interno do servidor`});
     }
 
 }
@@ -21,7 +21,7 @@ const buscar = async (req, res) => {
         return res.status(200).json(consultarUsuario);
         
     } catch (error) {
-        return res.status(500).json(`Erro interno do servidor`);
+        return res.status(500).json({mensagem: `Erro interno do servidor`});
     }
 }
 
@@ -32,7 +32,7 @@ const listar = async (req, res) => {
         return res.status(200).json(listarUsuario)
         
     } catch (error) {
-        return res.status(500).json(`Erro interno do servidor`);
+        return res.status(500).json({mensagem: `Erro interno do servidor`});
     }
 
 }
@@ -46,7 +46,7 @@ const atualizar = async (req, res) => {
         return res.status(201).json(atualizarUsuario);
         
     } catch (error) {
-        return res.status(500).json(`Erro interno do servidor`);
+        return res.status(500).json({mensagem: `Erro interno do servidor`});
     }
 }
 
@@ -58,7 +58,7 @@ const deletar = async (req, res) => {
         return res.status(201).json(deletarUsuario);
         
     } catch (error) {
-        return res.status(500).json(`Erro interno do servidor`);
+        return res.status(500).json({mensagem: `Erro interno do servidor`});
     }
 }
 
